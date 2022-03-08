@@ -241,15 +241,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .contact div:first-child {
+    padding-right: 2.5rem;
+  }
+
   .contact span {
     font-weight: normal;
-    flex-basis: 40%;
+    flex-basis: 35%;
     font-size: 0.6rem;
-    gap: 10px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   nav {
     padding-top: 20px;
   }
@@ -262,5 +265,19 @@ footer {
   }
   nav ul {
     gap: 0;
+  }
+
+  .contact div:first-child {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact div:first-child {
+    padding-right: 8.5rem;
   }
 }
